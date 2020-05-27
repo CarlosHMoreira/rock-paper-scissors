@@ -1,16 +1,20 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'cheap-module-source-map',
+  devtool: 'inline-source-map',
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
+  },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        resolve: {
-          extensions: ['.js', '.jsx'],
-        },
+        test: /\.ts(x?)$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        use: [
+          {
+            loader: "ts-loader"
+          }
+        ] 
       },
     ],
   },
