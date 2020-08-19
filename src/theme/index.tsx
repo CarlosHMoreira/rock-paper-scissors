@@ -3,7 +3,7 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import { defaultTheme } from './themes';
 
-type Props  = {
+type Props = {
   theme?: DefaultTheme,
   children: React.ReactChild
 }
