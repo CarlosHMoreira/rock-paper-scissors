@@ -14,8 +14,12 @@ module.exports = {
           {
             loader: "ts-loader"
           }
-        ] 
+        ]
       },
+      {
+        test: /\.(eot|svg|ttf|woff?2|otf)$/,
+        loader: 'file-loader',
+      }
     ],
   },
   plugins: [
