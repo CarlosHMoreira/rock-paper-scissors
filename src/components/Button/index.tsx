@@ -13,10 +13,14 @@ const Button = styled.button<Props>`
   border: 1.5px solid #fff;
   border-radius: 8px;
   background-color: ${({ outline }) => outline ? 'transparent' : '#fff' };
+  font-family: BarlowSemiCondensed;
   text-transform: uppercase;
-  color: ${({ outline, theme }) => outline ? '#fff' : theme.colors.neutral.darkText };
   letter-spacing: 1.2px;
-  font-weight: 600;
+  color: ${({ outline, theme }) => outline ? '#fff' : theme.colors.neutral.darkText };
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default Button;
