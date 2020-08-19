@@ -15,7 +15,6 @@ const Button = styled.button<Props>`
   background-color: ${({ outline }) => outline ? 'transparent' : '#fff' };
   font-family: BarlowSemiCondensed;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
   color: ${({ outline, theme }) => outline ? '#fff' : theme.colors.neutral.darkText };
 
   &:hover {
