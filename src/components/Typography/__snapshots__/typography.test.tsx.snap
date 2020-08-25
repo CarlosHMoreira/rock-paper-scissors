@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography it should match Text default snapshot 1`] = `
+<p
+  className=""
+>
+  Rock paper scissors
+</p>
+`;
+
+exports[`Typography it should match Text with different color and bold snapshot 1`] = `
+<p
+  className=""
+  color="#fff"
+>
+  Rock paper scissors
+</p>
+`;
+
+exports[`Typography it should match Text with different color snapshot 1`] = `
+<p
+  className=""
+  color="#fff"
+>
+  Rock paper scissors
+</p>
+`;
+
+exports[`Typography it should match Title with different color snapshot 1`] = `
+<h1
+  className=""
+  color="#fff"
+>
+  Rock paper scissors
+</h1>
+`;
+
+exports[`Typography it should match the default title snapshot 1`] = `
+<h1
+  className=""
+>
+  Rock paper scissors
+</h1>
+`;

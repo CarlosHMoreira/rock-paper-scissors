@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button it should match the big and outline button snapshot 1`] = `
+<button
+  className=""
+>
+  Some content
+</button>
+`;
+
+exports[`Button it should match the big button snapshot 1`] = `
+<button
+  className=""
+>
+  Some content
+</button>
+`;
+
+exports[`Button it should match the default button snapshot 1`] = `
+<button
+  className=""
+>
+  Some content
+</button>
+`;
+
+exports[`Button it should match the outline button snapshot 1`] = `
+<button
+  className=""
+>
+  Some content
+</button>
+`;
