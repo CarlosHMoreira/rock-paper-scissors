@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export type Props  = {
   outline?: boolean,
   big?: boolean,
-  children: React.ReactChild
+  children: React.ReactNode
 }
 
 const Button = styled.button<Props>`

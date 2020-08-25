@@ -5,7 +5,7 @@ import { defaultTheme } from './themes';
 
 type Props = {
   theme?: DefaultTheme,
-  children: React.ReactChild[]
+  children?: React.ReactNode
 }
 
 const Theme = ({ children, theme = defaultTheme }: Props) => (
