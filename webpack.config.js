@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const createStyledComponentsTransformer = require('typescript-plugin-styled-components').default;
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -12,7 +13,10 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "ts-loader"
+            loader: "ts-loader",
+            options: {
+              getCustomTransformers: () => ({ before: [createStyledComponentsTransformer()] })
+            },
           }
         ]
       },
